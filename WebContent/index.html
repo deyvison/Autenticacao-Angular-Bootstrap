@@ -1,8 +1,6 @@
-<html ng-app="Myapp">
-    <head>
-    	<meta charset="utf-8"/>
+<html ng-app="Myapp"/>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PÃ¡gina de autenticaÃ§Ã£o</title>
+        <title>Página de autenticação</title>
         
         <!--inserindo o bootstrap no documento html-->
 		<link href="lib/bootstrap.min.css" rel="stylesheet">
@@ -15,17 +13,17 @@
     </head>
     <body ng-controller="autenticacao">
     
-    	<!-- inserindo o  jQuery que Ã© requisito do JavaScript do Bootstrap -->
+    	<!-- inserindo o  jQuery que é requisito do JavaScript do Bootstrap -->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		
 		<!-- inserindo o JavaScript do Bootstrap -->
 		<script src="lib/bootstrap.min.js"></script>
 		
-		<form class="form-horizontal">
+		<form class="form-horizontal" ng-submit="enviarDados()">
 		
 
-		<!-- Nome do formulÃ¡rio -->
-		<legend>AutenticaÃ§Ã£o</legend>
+		<!-- Nome do formulário -->
+		<legend>Autenticação</legend>
 
 		<!-- Login-->
 		<div class="form-group">
@@ -52,7 +50,7 @@
 		</div>
 
 
-		<!-- Alguns testes para ver se o angularJs estÃ¡ funcionando-->
+		<!-- Alguns testes para ver se o angularJs está funcionando-->
 		<div class="form-group">
 			<label class="col-md-4 control-label">Login digitado: {{login}}</label>
 			

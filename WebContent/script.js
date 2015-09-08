@@ -1,12 +1,12 @@
 var app = angular.module("Myapp", []);
 
-app.controller('autenticacao',function autenticacao($scope){
+app.controller('autenticacao',function autenticacao($scope,$http){
 
-	var jsonObj = {"Login": $scope.login, "Senha": $scope.senha}
-
+	$scope.enviarDados = function(){
+		var jsonObj = {"Login": $scope.login, "Senha": $scope.senha}
+		$http.post("", jsonObj);
+	}
 	
-}
+	
+});
 
-
-
-)
